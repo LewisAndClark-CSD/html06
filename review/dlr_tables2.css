@@ -65,9 +65,10 @@ thead {
   background-color: rgb(105, 177, 60);
 }
 
-thead:first-of-type th {
+thead th:first-of-type  {
   background: rgb(153, 86, 7);
 }
+
 
 
 /* Table Footer Styles */
