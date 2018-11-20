@@ -7,8 +7,8 @@
       Review Assignment
 
       DLR Morning Schedule
-      Author: 
-      Date:   
+      Author: Peter and Morgan
+      Date: 11/20/18  
 
       Filename:   dlr_mornings.html
 
@@ -18,7 +18,9 @@
    <meta name="viewport" content="width=device-width, initial-scale=1" />
    <title>DLR Morning Schedule</title>
    <link href="dlr_reset2.css" rel="stylesheet" />
-   <link href="dlr_styles2.css" rel="stylesheet" />         
+   <link href="dlr_styles2.css" rel="stylesheet" />    
+    <link href="dlr_tables2.css" rel="stylesheet" />
+   <link href="dlr_columns2.css" rel="stylesheet" />    
 </head>
 
 <body>
@@ -48,6 +50,35 @@
             5:00 a.m. to 10:30 p.m. <br />You can <a href="#">Listen Live</a> to streaming audio 
             of our broadcast or download programs from our <a href="#">Podcast</a>. 
             <br />Please refer below for our current morning schedule.</p>
+	 
+	<table class="programs">
+		<caption>All Times Central</caption>
+		<colgroup>
+			<col class="timeColumn"/>
+			<col class="wDayColumns"/>
+			<col class="wEndColumns" span="2" />
+		</colgroup>
+		<thead>
+			<tr>
+				<th>Time</th>
+				<th>Mon</th>
+				<th>Tue</th>
+				<th>Wed</th>
+				<th>Thu</th>
+				<th>Fri</th>
+				<th>Sat</th>
+				<th>Sun</th>
+			</tr>
+		<tfoot>
+			<tr>
+				<td colspan="8">Support Your Public Radio Station</td>
+			</tr>
+		
+		</tfoot>		
+				
+			
+		
+	    
 
       </section>
       
