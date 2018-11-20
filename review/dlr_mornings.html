@@ -19,6 +19,8 @@
    <title>DLR Morning Schedule</title>
    <link href="dlr_reset2.css" rel="stylesheet" />
    <link href="dlr_styles2.css" rel="stylesheet" />         
+   <link href="dlr_tables2.css" rel="stylesheet" />
+   <link href="dlr_columns2.css" rel="stylesheet" />
 </head>
 
 <body>
@@ -52,7 +54,7 @@
           <caption>All Times Central</caption>
           <colgroup>
             <col class="timeColumn" />
-            <col class="wDayColumns" />
+            <col class="wDayColumns" span="5"/>
             <col class="wEndColumns" span="2"/>
           </colgroup>
           <thead>
@@ -68,13 +70,13 @@
             </tr>
           </thead>
           <tfoot>
-            <td>Support your Public Radio Station</td>
+            <td colspan="8">Support your Public Radio Station</td>
           </tfoot>
           <tbody>
             <tr>
               <th>5:00</th>
-              <td rowspan="5" colspan"4">Dawn Air</td>
-              <td rowspan="5">Dawn Air Weekends</td>
+              <td rowspan="4" colspan="5">Dawn Air</td>
+              <td rowspan="4">Dawn Air Weekends</td>
               <td rowspan="2">Sunday Magazine</td>
             </tr>
             <tr>
@@ -89,7 +91,7 @@
             </tr>
             <tr>
               <th>7:00</th>
-              <td colspan="5">Local News<td>
+              <td colspan="5">Local News</td>
               <td rowspan="2">Weekend Wrap</td>
               <td rowspan="2">Radio U</td>
             </tr>
@@ -115,7 +117,7 @@
             </tr>
             <tr>
               <th>10:00</th>
-              <td rowspan="4" colspan="5">Symphony City<td>
+              <td rowspan="4" colspan="5">Symphony City</td>
               <td>Word Play</td>
             </tr>
             <tr>
