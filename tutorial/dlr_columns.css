@@ -17,7 +17,7 @@
 
 /* Column Styles */
 
-@media only screen and (min-width:  641px) {
+@media only screen and (min-width: 641px) {
 	article {
 		-moz-column-count: 2;
 		-webkit-column-count: 2;
