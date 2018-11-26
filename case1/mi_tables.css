@@ -6,8 +6,8 @@
    Case Problem 1
 
    Tables Style Sheet
-   Author: 
-   Date:   
+   Author: Khanh and Rob
+   Date:   11/26/18
 
    Filename:         mi_tables.css
 
@@ -15,7 +15,13 @@
 
 /* Table Styles */
 
+table {
+	background-color: rgb(190, 215, 255); 
+	border: 5px solid gray;
+}
 
+th, td {
+	border: 3px solid gray;
 
 /* Column Styles */
 
