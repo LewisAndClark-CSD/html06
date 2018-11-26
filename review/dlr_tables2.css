@@ -35,7 +35,7 @@ table.programs th, table.programs td {
 /* Table Caption Styles */
 
 table.programs caption {
-  vertical-align: top;
+  caption-side: bottom;
   text-align: center;
 }
 
@@ -54,7 +54,7 @@ col.wDayColumns {
 
 col.wEndColumns {
   width: 17%;
-  background-color: rgb(255, 231, 211);
+  background-color: rgb(255, 231, 255);
 }
 
 
@@ -69,6 +69,20 @@ thead th:first-of-type  {
   background: rgb(153, 86, 7);
 }
 
+thead th:nth-of-type(7) {
+  background-color: rgb(153, 0, 153);
+}
+
+thead th:nth-of-type(8) {
+  background-color: rgb(153, 0, 153);
+}
+
+
 
 
 /* Table Footer Styles */
+
+tfoot {
+  color: white;
+  background-color: black;
+}
