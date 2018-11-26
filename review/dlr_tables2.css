@@ -61,5 +61,17 @@ thead {
   background: rgb(105,177,60);
 }
 
+thead th:first-of-type {
+  background: rgb(153,86,7);
+}
+
+thead th:nth-of-type(7n), thead th:nth-of-type(8n) {
+  background: rgb(153,0,153);
+}
+
 
 /* Table Footer Styles */
+tfoot {
+  color: white;
+  background: black;
+}
