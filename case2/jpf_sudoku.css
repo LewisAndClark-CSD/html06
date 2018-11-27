@@ -42,7 +42,7 @@ table.subTable {
 }
 
 table.subTable td {
-  box-shadow: inset 0px 0px 15px black;
+  box-shadow: inset 0px 0px 15px;
   border: 1px solid black;
   color: blue;
   height: 40px;
