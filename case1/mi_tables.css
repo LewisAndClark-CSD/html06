@@ -32,6 +32,7 @@ th {
 	font-weight:normal;
 }
 
+
 td{
 	color:white;
 	font-size:0.9em;
@@ -62,6 +63,7 @@ thead tr:first-of-type th:first-of-type{
 thead tr:first-of-type th:not(:first-of-type) {
 	background-color:transparent;
 	color:black;
+	
 }
 
 
