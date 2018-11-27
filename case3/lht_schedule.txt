@@ -1,5 +1,17 @@
 Lyman Hall Theater Schedule of Events
 
+
+
+
+
+	       <td class="date-date">Mon,Jan 29,2018</td>
+	       <td class="date-date">Tue,Jan 30,2018</td>
+		<td class="date-date">Wed,Jan 31,2018</td>
+		<td class="date-date">Thu,Feb 1,2018</td>
+		<td class="date-date">Fri,Feb 2,2018</td>
+		<td class="date-date">Sat,Feb 3,2018</td>
+		<td class="date-date">Sun,Feb 4,2018</td>
+
 January 28
 Caron Quartet
 1 pm
