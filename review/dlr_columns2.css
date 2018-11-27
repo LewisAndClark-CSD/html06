@@ -21,6 +21,8 @@
 		-moz-column-gap: 20px;
 		-webkit-column-gap: 20px;
 		column-gap: 20px;
+		-moz-column-rule: 1px solid black;
+		-webkit-column-rule: 1px solid black;
 		column-rule: 1px solid black;
 	}
 }
