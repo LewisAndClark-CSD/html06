@@ -31,6 +31,13 @@ Lyman Hall Theater Schedule of Events
 		<td class="date-date">Thu,Feb 22,2018</td>
 		<td class="date-date">Fri,Feb 23,2018</td>
 		<td class="date-date">Sat,Feb 24,2018</td>
+		<td class="date-date">Sun,Feb 25,2018</td>
+		<td class="date-date">Mon,Feb 26,2018</td>
+		<td class="date-date">Tue,Feb 27,2018</td>
+		<td class="date-date">Wed,Feb 28,2018</td>
+		<td class="date-date">Thu,Mar 1,2018</td>
+		<td class="date-date">Fri,Mar 2,2018</td>
+		<td class="date-date">Sat,Mar 3,2018</td>
 
 
 January 28
