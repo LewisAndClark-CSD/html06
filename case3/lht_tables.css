@@ -77,15 +77,23 @@
 		content:fixed;
 		width: 85%;
 	}
-	td, h1{
+	td{
 		border: 1px solid grey;
 		font-size:0.85em;
 		font-weight:normal;
 		padding:5px;
-		text-align:center;
+		vertical-align:top;
 		width:14.28%;
 		word-wrap: normal;
+		background-color:rgba(171,171,171,0.6);
+		color:rgb(11,12,145);
 	}
+	td[data-date*="Feb"]{
+		background-color:rgba(232,214,148,0.6);
+		box-shadow: inset grey 0px 0px 20px;
+	}
+
+		
 	
 	
 	
