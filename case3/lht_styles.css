@@ -138,7 +138,7 @@ footer::after {
    Mobile Styles: 0px to 640px 
    ===============================
 */
-@media only screen and (max-width: 640px) {
+/*@media only screen and (max-width: 640px) {*/
 
    
    a#navicon {
