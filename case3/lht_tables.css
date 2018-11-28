@@ -22,18 +22,17 @@
 		display:block;
 	}
 
-	thead{
+	thead th, tbody h1{
 		display:none;
 	}
-	h1{
-		display:none;
-	}
+	
 	caption{
 		background-color:grey;
 		color:white;
 		font-size:1.5em;
 		line-height:2em;
 	}
+	
 	td{
 		border: 1px dotted gray;
 		color: rgb(11,12,145);
@@ -41,11 +40,13 @@
 		padding-left:40%;
 		min-height:40px;
 	}
+	
 	tr:nth-of-type(odd){
 		background-color:rgb(255,235,178);
-		border: 2px solid gray;
+		border: 2px solid grey;
 	
    }
+   /*Kenaz and Lauren gave me this*/
    td:before{
 	   content:attr(data-date);
 	   position:absolute;
@@ -61,3 +62,31 @@
    Tablet and Desktop Styles: greater than 640px
    =============================================
 */
+@media only screen and (min-width: 641px) {
+	table{
+		background-image: url("lht_photo1.png");
+		background-repeat:no-repeat;
+		background-position:right bottom;
+		background-size:40%;
+		border: 6px double rgb(154,64,3);
+		border-collapse:collapse;
+		margin-top:20px;
+		margin-bottom:20px;
+		margin-left:auto;
+		margin-right:auto;
+		content:fixed;
+		width: 85%;
+	}
+	td, h1{
+		border: 1px solid grey;
+		font-size:0.85em;
+		font-weight:normal;
+		padding:5px;
+		text-align:center;
+		width:14.28%;
+		word-wrap: normal;
+	}
+	
+	
+	
+}
