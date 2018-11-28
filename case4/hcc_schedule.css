@@ -45,3 +45,9 @@ thead th {
 td {
   background-color: moccasin;
 }
+
+caption {
+  background-color: darkslategray;
+  color: snow;
+  font-weight: bold;
+}
