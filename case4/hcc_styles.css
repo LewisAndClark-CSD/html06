@@ -28,6 +28,10 @@ header {
 	font-family: "Comic Sans MS", cursive, sans-serif;
 	display: block;
 	width: 100%
+}
+
+header h1{
+	text-align: center;
 }
 nav.horizontal ul {
    width: 100%;
@@ -63,6 +67,7 @@ pre {
 	background-image: url("GOD.jpeg");
 	color: white;
 	font-weight: bold;
+	font-size: 1.5em;
 }
 
 /* Footer Styles */

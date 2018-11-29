@@ -18,10 +18,19 @@
 /* Table Styles*/
 table{
 	font-family: "Comic Sans MS", cursive, sans-serif;
+	border: 2px solid brown;
+	border-collapse: collapse;
+}
+
+col#times{
+	width: 10%;
 }
 
 td {
 	text-align: center;
+	border: 1px solid brown;
+	border-collapse:collapse;
+	vertical-align: top; 
 }
 
 td#yep{
@@ -38,10 +47,12 @@ th {
 	font-size: 1.15em;
 	background-color: rgb(189, 190, 31);
 	color:rgb(93, 60, 23);
+	border: 1px solid brown;
 }
 
 caption {
 	color: orange;
+	font-size: 2em;
 }
 
 thead th {
