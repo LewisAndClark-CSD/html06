@@ -21,19 +21,16 @@ table {
 }
 
 caption {
-
   border: 1px solid white;
   background-color: white;
   width: 99.5%;
-
 }
 
 /* Data Cell Styles */
 td {
-
   vertical-align: top;
   text-align: center;
-
+  border: 2px ridge black;
 }
 
 td#event {
@@ -43,17 +40,13 @@ td#event {
 /* Row Styles */
 
 th, tr {
-
   border: 1px solid black;
-
 }
 
 th {
-
   width: 97%;
   background-color: black;
   color: white;
-
 }
 
 
@@ -68,7 +61,7 @@ th {
     display: block;
   }
 
- thead {
+ thead, article {
     display: none;
   }
 
@@ -94,4 +87,29 @@ th {
   }
 
 
+}
+
+/* Column Styles */
+
+article {
+  -moz-column-count: 2;
+  -webkit-column-count: 2;
+  column-count: 2;
+
+  -moz-column-gap: 30px;
+  -webkit-column-gap: 30px;
+  column-gap: 30px;
+
+  -moz-column-rule: 3px dashed black;
+  -webkit-column-rule: 3px dashed black;
+  column-rule: 3px dashed black;
+
+  widows: 3;
+  orphans: 3;
+}
+
+article h1 {
+  -moz-column-span: all;
+  -webkit-column-span: all;
+  column-span: all;
 }

@@ -89,5 +89,3 @@ Maximum Capacity: 30
 
 Green Room
 Maximum Capacity: 55
-
-
