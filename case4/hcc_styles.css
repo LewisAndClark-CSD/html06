@@ -11,16 +11,21 @@
    Supporting files:
 
 */
+/* HTML Styles */
 
 html {
   vertical-align: middle;
 }
+
+/* Body Styles */
 
 body {
   background-image: url(https://c1.staticflickr.com/9/8065/8252325805_145ee188da_b.jpg);
   background-repeat: no-repeat;
   background-size: cover;
 }
+
+/* Navigation Styles */
 
 nav {
   clear: both;
@@ -46,6 +51,8 @@ nav li:hover {
   transition: 0.3s;
 }
 
+/* Article & Footer Styles */
+
 article, footer {
   text-align: center;
   vertical-align: middle;
@@ -66,11 +73,14 @@ article h1 {
   font-size: 2em;
 }
 
+/* Footer Styles */
+
 footer {
   box-shadow: inset 0px 0px 10px black;
   border-top: 6px double red;
 }
 
+/* Table, Article, Footer Styles */
 
 table a, article a, footer a {
   color: white;
@@ -87,10 +97,16 @@ table a:hover, article a:hover, footer a:hover {
   font-style: italic;
 }
 
+/* Navicon Styles */
+
 a#navicon {
    display: none;
 }
 
+/* =============================================
+   Mobile Styles: 0px to 640px
+   =============================================
+*/
 @media only screen and (max-width: 640px) {
    a#navicon {
       display: block;
@@ -140,7 +156,7 @@ a#navicon {
 
 
 /* =============================================
-   Tablet and Desktop Styles: greater than 640px
+   Tablet and Desktop Styles: greater than 641px
    =============================================
 */
 @media only screen and (min-width: 641px) {

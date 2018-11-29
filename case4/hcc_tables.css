@@ -12,6 +12,8 @@
 
 */
 
+/* Desktop Table Styles */
+
 table#desktop {
   background-color: gray;
   background-size: 40%;
@@ -67,6 +69,8 @@ table#desktop thead tr:nth-of-type(3n) th {
   padding-left: 1.3%;
 }
 
+/* Empty Cell Class Styles */
+
 .empty-cell {
   background: repeating-linear-gradient(
   45deg,
@@ -77,6 +81,10 @@ table#desktop thead tr:nth-of-type(3n) th {
   );
 }
 
+/* =============================================
+   Mobile Styles: 0px to 640px
+   =============================================
+*/
 @media only screen and (max-width: 640px) {
   table.mobile {
     background-color: gray;

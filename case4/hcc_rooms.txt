@@ -28,11 +28,11 @@ Sunrise Room
 3:00 - 5:00  (Marriage Encounter Talks)
 
 
-Mountain View Room
+Mountain View RooInfom
 8:00 - 9:00 (Breakfast Club of Ohio)
 11:00 - 1:00 (Ohio Conference of Librarians)
 2:00 - 5:00 (Ohio Book Resale Setup)
-
+Info
 Arbor Hall
 
 8:00 - 12:00 (Computer Expo set up)
@@ -89,5 +89,3 @@ Maximum Capacity: 30
 
 Green Room
 Maximum Capacity: 55
-
-
