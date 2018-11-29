@@ -1,0 +1,172 @@
+/*
+   New Perspectives on HTML and CSS, 7th Edition
+   Tutorial 6
+   Case Problem 4
+
+   Hamilton Conference Center Style Sheet
+   Author: Josh, Dylan
+   Date:
+
+   Filename:         hcc_styles.css
+   Supporting files:
+
+*/
+/* HTML Styles */
+
+html {
+  vertical-align: middle;
+}
+
+/* Body Styles */
+
+body {
+  background-image: url(https://c1.staticflickr.com/9/8065/8252325805_145ee188da_b.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+/* Navigation Styles */
+
+nav {
+  clear: both;
+}
+
+nav li {
+  width: 11.11%;
+  float: left;
+  text-align: center;
+  padding: 0.8%;
+  transition: 0.5s;
+  background-color: gray;
+  color: white;
+  border-bottom: 6px double red;
+  text-overflow: clip;
+  overflow: hidden;
+}
+
+nav li:hover {
+  background-color: white;
+  color: red;
+  border-bottom: 1px solid red;
+  transition: 0.3s;
+}
+
+/* Article & Footer Styles */
+
+article, footer {
+  text-align: center;
+  vertical-align: middle;
+  padding: 1%;
+  background-color: gray;
+}
+
+article {
+  margin-left: auto;
+  margin-right: auto;
+  width: 85%;
+  margin-bottom: 1%;
+  border: 6px double white;
+}
+
+article h1 {
+  padding-bottom: 1%;
+  font-size: 2em;
+}
+
+/* Footer Styles */
+
+footer {
+  box-shadow: inset 0px 0px 10px black;
+  border-top: 6px double red;
+}
+
+/* Table, Article, Footer Styles */
+
+table a, article a, footer a {
+  color: white;
+  transition: 0.3s;
+  font-size: normal;
+  word-wrap: normal;
+  text-overflow: clip;
+}
+
+table a:hover, article a:hover, footer a:hover {
+  text-decoration: none;
+  color: red;
+  transition: 0.3s;
+  font-style: italic;
+}
+
+/* Navicon Styles */
+
+a#navicon {
+   display: none;
+}
+
+/* =============================================
+   Mobile Styles: 0px to 640px
+   =============================================
+*/
+@media only screen and (max-width: 640px) {
+   a#navicon {
+      display: block;
+      background-color: gray;
+      border-bottom: 2px solid black;
+      transition: 0.3s;
+   }
+
+   nav ul {
+      display: none;
+      transition: 0.3s;
+   }
+
+   nav ul li {
+      width: 100%;
+      border: none;
+   }
+
+   nav ul li:hover {
+      width: 100%;
+      border: none;
+   }
+
+   nav ul li:last-of-type {
+      border-bottom: 2px solid black;
+   }
+
+   a#navicon:hover+ul, nav ul:hover {
+      display: block;
+      transition: 0.3s;
+   }
+
+   article h1 {
+     line-height: 1.1em;
+   }
+
+   table.mobile {
+     display: table;
+
+   }
+
+   table#desktop {
+     display: none;
+   }
+
+}
+
+
+/* =============================================
+   Tablet and Desktop Styles: greater than 641px
+   =============================================
+*/
+@media only screen and (min-width: 641px) {
+
+  table.mobile {
+    display: none;
+  }
+
+  table#desktop {
+    display: table;
+  }
+
+}

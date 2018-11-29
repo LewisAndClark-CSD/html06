@@ -1,0 +1,133 @@
+/*
+   New Perspectives on HTML and CSS, 7th Edition
+   Tutorial 6
+   Case Problem 4
+
+   Schedule table Style Sheet
+   Author: Josh, Dylan
+   Date:
+
+   Filename:         hcc_schedule.css
+   Supporting Files:
+
+*/
+
+/* Desktop Table Styles */
+
+table#desktop {
+  background-color: gray;
+  background-size: 40%;
+  width: 85%;
+  border-bottom: 6px double white;
+  border-left: 6px double white;
+  border-right: 6px double white;
+  border-collapse: collapse;
+  margin-top: 1%;
+  margin-bottom: 1%;
+  margin-left: auto;
+  margin-right: auto;
+  table-layout: fixed;
+  text-align: center;
+  vertical-align: middle;
+}
+
+table#desktop th, td {
+  border: 1px solid gray;
+  font-size: 1em;
+  font-weight: normal;
+  padding: 5px;
+  vertical-align: text-top;
+  width: 14.28%;
+  text-overflow: wrap;
+  text-align: center;
+  vertical-align: middle;
+}
+
+table#desktop td {
+  background-color: rgba(171,171,171,0.6);
+  color: rgb(11,12,145);
+}
+
+table#desktop caption {
+  font-size: 2em;
+  background-color: gray;
+  margin-top: 1%;
+  padding-top: 1%;
+  padding-bottom: 0.8%;
+  border-left: 6px double white;
+  border-right: 6px double white;
+  border-top: 6px double white;
+  border-bottom: 1px solid white;
+}
+
+table#desktop col:first-of-type {
+  width: 5%;
+}
+
+table#desktop thead tr:nth-of-type(3n) th {
+  text-align: left;
+  padding-left: 1.3%;
+}
+
+/* Empty Cell Class Styles */
+
+.empty-cell {
+  background: repeating-linear-gradient(
+  45deg,
+  LightCyan,
+  LightCyan 10px,
+  LightSeaGreen 10px,
+  LightSeaGreen 20px
+  );
+}
+
+/* =============================================
+   Mobile Styles: 0px to 640px
+   =============================================
+*/
+@media only screen and (max-width: 640px) {
+  table.mobile {
+    background-color: gray;
+    background-size: 40%;
+    width: 85%;
+    border-bottom: 6px double white;
+    border-left: 6px double white;
+    border-right: 6px double white;
+    border-collapse: collapse;
+    margin-top: 1%;
+    margin-bottom: 1%;
+    margin-left: auto;
+    margin-right: auto;
+    table-layout: fixed;
+    text-align: center;
+    vertical-align: middle;
+  }
+
+  table.mobile th, td {
+    border: 1px solid gray;
+    font-size: 1em;
+    font-weight: normal;
+    vertical-align: text-top;
+    text-overflow: wrap;
+    text-align: center;
+    vertical-align: middle;
+  }
+
+  table.mobile td {
+    background-color: rgba(171,171,171,0.6);
+    color: rgb(11,12,145);
+  }
+
+  table.mobile caption {
+    font-size: 1.1em;
+    line-height: 1.1em;
+    background-color: gray;
+    margin-top: 1%;
+    padding-top: 1%;
+    padding-bottom: 0.8%;
+    border-left: 6px double white;
+    border-right: 6px double white;
+    border-top: 6px double white;
+    border-bottom: 1px solid white;
+  }
+}

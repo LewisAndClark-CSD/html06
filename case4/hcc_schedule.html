@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html>
+  <head>
+     <!--
+        New Perspectives on HTML5 and CSS3, 7th Edition
+        Tutorial 6
+        Case Problem 4
+
+        Hamilton Conference Center Room Schedule
+        Author: Josh, Dylan
+        Date: 11/27/18
+
+        Filename:   hcc_schedule.html
+
+     -->
+
+     <meta charset="utf-8" />
+     <meta name="viewport" content="width=device-width, initial-scale=1" />
+     <title>Hamilton Conference Center</title>
+     <link href="hcc_reset.css" rel="stylesheet" />
+     <link href="hcc_styles.css" rel="stylesheet" />
+     <link href="hcc_tables.css" rel="stylesheet" />
+     <link href="hcc_columns.css" rel="stylesheet" />
+  </head>
+  <body>
+    <nav><a id="navicon" href="#"><img src="navicon.png" alt="" /></a>
+      <ul>
+        <a href="javascript:void(0)"><li>Home Page</li></a>
+        <a href="javascript:void(0)"><li>Reservations</li></a>
+        <a href="javascript:void(0)"><li>Facilities</li></a>
+        <a href="javascript:void(0)"><li>Virtual Tour</li></a>
+        <a href="javascript:void(0)"><li>Staff</li></a>
+        <a href="javascript:void(0)"><li>Calendar of Events</li></a>
+        <a href="javascript:void(0)"><li>Contact Info</li></a>
+        <a href="javascript:void(0)"><li>Directions</li></a>
+        <a href="javascript:void(0)"><li>FAQ</li></a>
+      </ul>
+    </nav>
+    <table id="desktop">
+      <caption>Reservations for Conference Rooms - Tuesday, April 10</caption>
+      <colgroup>
+        <col />
+        <col />
+        <col />
+        <col />
+        <col />
+        <col />
+        <col />
+        <col />
+      </colgroup>
+      <thead>
+        <tr>
+          <th></th>
+          <th>Sunrise Room</th>
+          <th>Mountain View Room</th>
+          <th>Arbor Hall</th>
+          <th>Mitchell Theater</th>
+          <th>Gold Room</th>
+          <th>Blue Room</th>
+          <th>Green Room</th>
+        </tr>
+        <tr>
+          <th>Capacity</th>
+          <td>80</td>
+          <td>150</td>
+          <td>190</td>
+          <td>120</td>
+          <td>40</td>
+          <td>30</td>
+          <td>55</td>
+        </tr>
+        <tr>
+          <th colspan="8">Time</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td class="am-time">8:00</td>
+          <td rowspan="5">Marriage Encounter</td>
+          <td rowspan="3">Breakfast Club of Ohio</td>
+          <td rowspan="9">Computer Expo set up</td>
+          <td class="empty-cell" rowspan="14"></td>
+          <td class="empty-cell" rowspan="2"></td>
+          <td class="empty-cell" rowspan="2"></td>
+          <td class="empty-cell" rowspan="2"></td>
+        </tr>
+        <tr>
+          <td class="am-time">8:30</td>
+        </tr>
+        <tr>
+          <td class="am-time">9:00</td>
+          <td rowspan="3">The Tompkins Group</td>
+          <td rowspan="3">Retirement Planning</td>
+          <td rowspan="4">Drivers' Ed</td>
+        </tr>
+        <tr>
+          <td class="am-time">9:30</td>
+          <td class="empty-cell" rowspan="3"></td>
+        </tr>
+        <tr>
+          <td class="am-time">10:00</td>
+        </tr>
+        <tr>
+          <td class="am-time">10:30</td>
+          <td class="empty-cell" rowspan="3"></td>
+          <td rowspan="4">Pearson Planning</td>
+          <td rowspan="3">The Senior Group</td>
+        </tr>
+        <tr>
+          <td class="am-time">11:00</td>
+          <td rowspan="5">Ohio Conference of Librarians</td>
+          <td rowspan="9">Movie Club</td>
+        </tr>
+        <tr>
+          <td class="am-time">11:30</td>
+        </tr>
+        <tr>
+          <td class="pm-time">12:00</td>
+          <td rowspan="3">Marriage Encounter Luncheon</td>
+          <td rowspan="3">Senior Luncheon</td>
+        </tr>
+        <tr>
+          <td class="pm-time">12:30</td>
+          <td class="empty-cell"></td>
+          <td class="empty-cell" rowspan="3"></td>
+        </tr>
+        <tr>
+          <td class="pm-time">1:00</td>
+          <td rowspan="9">Computer Expo opening session</td>
+        </tr>
+        <tr>
+          <td class="pm-time">1:30</td>
+          <td class="empty-cell" rowspan="3"></td>
+          <td class="empty-cell"></td>
+          <td rowspan="6">Senior Classes</td>
+        </tr>
+        <tr>
+          <td class="pm-time">2:00</td>
+          <td rowspan="7">Ohio Book Resale Setup</td>
+          <td rowspan="4">Mothers of Multiples</td>
+        </tr>
+        <tr>
+          <td class="pm-time">2:30</td>
+        </tr>
+        <tr>
+          <td class="pm-time">3:00</td>
+          <td rowspan="5">Marriage Encounter Talks</td>
+          <td rowspan="5">Youth Theatre</td>
+        </tr>
+        <tr>
+          <td class="pm-time">3:30</td>
+          <td rowspan="4">Tutoring</td>
+        </tr>
+        <tr>
+          <td class="pm-time">4:00</td>
+          <td rowspan="3">Teen Connection</td>
+        </tr>
+        <tr>
+          <td class="pm-time">4:30</td>
+          <td rowspan="2">Tutoring</td>
+        </tr>
+        <tr>
+          <td class="pm-time">5:00</td>
+        </tr>
+      </tbody>
+    </table>
+    <table class="mobile">
+      <caption>Sunrise Room</caption>
+      <colgroup>
+        <col />
+      </colgroup>
+      <thead>
+        <tr>
+          <th>Capacity: 80</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Marriage Encounter<br>(8:00 - 10:00)</td>
+        </tr>
+        <tr>
+          <td>Marriage Encounter Luncheon<br>(12:00 - 1:00)</td>
+        </tr>
+        <tr>
+          <td>Marriage Encounter Talks<br>(3:00 - 5:00)</td>
+        </tr>
+      </tbody>
+    </table>
+    <table class="mobile">
+      <caption>Mountain View Room</caption>
+      <colgroup>
+        <col />
+      </colgroup>
+      <thead>
+        <tr>
+          <th>Capacity: 150</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Breakfast Club of Ohio<br>(8:00 - 9:00)</td>
+        </tr>
+        <tr>
+          <td>Ohio Conference of Librarians<br>(11:00 - 1:00)</td>
+        </tr>
+        <tr>
+          <td>Ohio Book Resale Setup<br>(2:00 - 5:00)</td>
+        </tr>
+      </tbody>
+    </table>
+    <table class="mobile">
+      <caption>Arbor Hall</caption>
+      <colgroup>
+        <col />
+      </colgroup>
+      <thead>
+        <tr>
+          <th>Capacity: 190</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Computer Expo set up<br>(8:00 - 12:00)</td>
+        </tr>
+        <tr>
+          <td>Computer Expo opening session<br>(1:00 - 5:00)</td>
+        </tr>
+      </tbody>
+    </table>
+    <table class="mobile">
+      <caption>Mitchell Theater</caption>
+      <colgroup>
+        <col />
+      </colgroup>
+      <thead>
+        <tr>
+          <th>Capacity: 120</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Youth Theatre<br>(3:00 - 5:00)</td>
+        </tr>
+      </tbody>
+    </table>
+    <table class="mobile">
+      <caption>Gold Room</caption>
+      <colgroup>
+        <col />
+      </colgroup>
+      <thead>
+        <tr>
+          <th>Capacity: 40</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>The Tompkins Group<br>(9:00 - 10:30)</td>
+        </tr>
+        <tr>
+          <td>Pearson Planning<br>(10:30 - 12:00)</td>
+        </tr>
+        <tr>
+          <td>Mothers of Multiples<br>(2:00 - 3:30)</td>
+        </tr>
+        <tr>
+          <td>Teen Connection<br>(3:30 - 5:00)</td>
+        </tr>
+      </tbody>
+    </table>
+    <table class="mobile">
+      <caption>Blue Room</caption>
+      <colgroup>
+        <col />
+      </colgroup>
+      <thead>
+        <tr>
+          <th>Capacity: 30</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Retirement Planning<br>(9:00 - 10:30)</td>
+        </tr>
+        <tr>
+          <td>The Senior Grou<br>(10:30 - 12:00)</td>
+        </tr>
+        <tr>
+          <td>Senior Luncheon<br>(12:00 - 1:00)</td>
+        </tr>
+        <tr>
+          <td>Senior Classes<br>(1:00 - 3:30)</td>
+        </tr>
+        <tr>
+          <td>Tutoring<br>(3:30 - 5:00)</td>
+        </tr>
+      </tbody>
+    </table>
+    <table class="mobile">
+      <caption>Green Room</caption>
+      <colgroup>
+        <col />
+      </colgroup>
+      <thead>
+        <tr>
+          <th>Capacity: 55</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Drivers' Ed<br>(9:00 - 11:00)</td>
+        </tr>
+        <tr>
+          <td>Movie Club<br>(11:00 - 1:30)</td>
+        </tr>
+        <tr>
+          <td>Tutoring<br>(3:30 - 5:00)</td>
+        </tr>
+      </tbody>
+    </table>
+    <article>
+      <h1>Reservations for Conference Rooms</h1>
+      <p>
+        To reserve a room, please contact Yancy Inwe at extension 388 or by e-mail at <a target="_top" href="mailto:yancyinwe@hconfcenter.org?subject=Contact%20Reservations">yancyinwe@hconfcenter.org</a>.<br><br>
+        Reservations should be made at least 48 hours in advance. Cancellations require 24 hour notice. Room deposits will<br>
+        not be returned for cancellations within 24 hours of the scheduled event.
+      </p>
+    </article>
+    <footer>
+      <p><i><a href="https://codepen.io/massiebn/pen/vmkwJ" target="_blank">Falling Snow Thanks to: Scott Schiller</a></i></p>
+      <p>
+        Hamilton Conference Center<br>
+        8711 West Park Lane<br>
+        Hamilton, OH 45011<br>
+        <a target="_top" href="tel:5155557911">(513) 555 - 7911</a><br>
+      </p>
+      <!-- Code taken from Karen Wong, Image from Pixabay -->
+    </footer>
+  </body>
+  <script type="text/javascript" src="./snow.js"></script>
+</html>
