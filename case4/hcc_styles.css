@@ -1,0 +1,40 @@
+/*
+   New Perspectives on HTML and CSS, 7th Edition
+   Tutorial 6
+   Case Problem 4
+
+   Hamilton Conference Center Style Sheet
+   Author: Cameron Odom & Brett 
+   Date: November 29, 2018
+
+   Filename:         hcc_styles.css
+   Supporting files: 
+
+*/
+
+/*HTML styles*/
+
+html{
+	width:80%;
+	margin-left:10%;
+	margin-right:10%;
+	background-color:crimson;
+}
+
+body{
+	background-color:white;
+}
+
+header{
+	background-color:brown;
+	height:200px;
+	padding:5px;
+}
+
+h1{
+	font-size:4em;
+	color: orange;
+}
+aside{
+	float:left;
+	
