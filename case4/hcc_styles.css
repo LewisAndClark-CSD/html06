@@ -15,18 +15,29 @@
 */
 
 @media only screen and (max-width: 640px) {
-  nav.horizontal ul {
-    display: none;
-  }
-    
+  
   a#navicon {
     display: block;
   }
-    
-  a#navicon:hover+ul, nav.horizontal ul:hover {
+  
+  header nav {
+    padding-bottom: 5px;
+  }
+   
+  header nav ul {
+    display: none;
+  }
+   
+  header nav ul li {
+    font-size: 1em;
+    line-height: 1.3em;
+    height: 1.3em;
+  }
+   
+  a#navicon:hover+ul, header nav ul:hover {
     display: block;
   }
-  
+   
   aside {
     display: none;
   }
@@ -34,6 +45,14 @@
   footer{
     -webkit-order: 100;
     order: 100;
+  }
+  
+  table.schedule {
+    display: none;
+  }
+  
+  table.mobile {
+    margin-bottom: 10px;
   }
 }
 
@@ -53,6 +72,10 @@
   nav.horizontal ul li{
     -webkit-flex: 1 1 auto;
     flex: 1 1 auto;
+  }
+  
+  table.mobile {
+    display: none;
   }
   
 }
