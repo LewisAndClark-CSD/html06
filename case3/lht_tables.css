@@ -17,21 +17,28 @@
    Mobile Styles: 0px to 640px 
    ===============================
 */
-@media only screen(max-width:640px) {
+@media only screen and (max-width: 640px) {
 	table, tbody, tr, td, th, caption {
 		display: block;
 	}
-	thead h1 {
+	
+	thead {
 		display: none;
 	}
-	table caption {
-		background-color: medium gray;
+	
+	h1 {
+		display: none;
+	}
+	
+	
+	caption {
+		background-color: gray;
 		color: white;
 		font-size: 1.5em;
 		line-height: 2em;
 	}
 	
-	dt {
+	td {
 		border: 1px dotted gray;
 		color: rgb(11, 12, 145);
 		position: relative;
@@ -45,13 +52,14 @@
 	}
 	
 	td:before {
-		content: attr"data-date";
+		content: attr(data-date);
 		position: absolute;
 		top: 0;
 		left: 0;
 		width: 40%;
 		padding: 5px;
 	}
+}
 		
 
 
@@ -61,10 +69,13 @@
    =============================================
 */
 
-@media only screen(min-width: 641px) {
+@media only screen and (min-width: 641px) {
 	
-	table{
-		background-image: url(lht_photo1.png) no-tiling bottom-right 40%;
+	table {
+		background-image: url("lht_photo1.png");
+		background-repeat: no-repeat;
+		background-position: bottom right;
+		background-size: 40%;
 		border: 6px double rgb(154, 64, 3);
 		border: collapse;
 		margin-top: 20px;
@@ -75,7 +86,7 @@
 		width: 85%;
 	}
 	
-	td {
+	thead, td {
 		border: 1px solid gray;
 		font-size: 0.85em;
 		font-weight: normal;
@@ -83,12 +94,30 @@
 		vertical-align: top;
 		width: 14.28%;
 		word-wrap: normal;
+		
+	}
+	
+	td {
 		background-color: rgba(171, 171, 171, 0.6);
 		color: rgb(11, 12, 145);
 	}
 	
-	td [data-date*="Feb"] {
-		background-color: rgba
+	td[data-date*="Feb"] {
+		background-color: rgba(232, 214, 148, 0.6);
+		box-shadow: gray inset 0px 0px 20px;
 		
-		/*step 19 page 496 */
+	}
+	caption {
+		caption-side: top;
+		text-align: center;
+		padding-bottom: 10px;
+		font-size: 1.2em;
+		letter-spacing: 3px;
+	}
+	
+	thead th {
+		background-color: rgb(154, 64, 3);
+		color: white;
+	}
+}
 		
