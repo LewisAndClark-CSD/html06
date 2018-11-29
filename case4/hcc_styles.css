@@ -41,4 +41,18 @@
   a#navicon {
     display: none;
   }
+  
+  nav.horizontal ul{
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-flow: row wrap;
+    flex-flow: row wrap;
+    height: 59px;
+  }
+   
+  nav.horizontal ul li{
+    -webkit-flex: 1 1 auto;
+    flex: 1 1 auto;
+  }
+  
 }

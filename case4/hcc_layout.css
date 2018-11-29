@@ -9,7 +9,7 @@
    Author: Jeremy Snider and Austin Andrews
    Date:   November 27th 2018
 
-   Filename:         hcc_schedule.css
+   Filename:         hcc_layout.css
    Supporting Files: 
 
 */
@@ -18,21 +18,26 @@
 /* HTML and Body styles */
 
 html {
-   background: white;
-   font-family: Verdana, Geneva, sans-serif;
-   height: 100%;
+  background: white;
+  font-family: Verdana, Geneva, sans-serif;
+  height: 100%;
 }
 
 body {
-   background-color: cornsilk;
-   box-shadow: rgb(51, 51, 51) 10px 0px 25px, rgb(51, 51, 51) -10px 0px 25px;
-   border-left: 1px solid gray;
-   border-right: 1px solid gray;
-   min-height: 100%;   
-   margin: 0px auto;
-   min-width: 400px;
-   max-width: 1024px;   
-   width: 100%; 
+  -webkit-display: flex;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-flow: row wrap;
+  flex-flow: row wrap;
+  background-color: cornsilk;
+  box-shadow: rgb(51, 51, 51) 10px 0px 25px, rgb(51, 51, 51) -10px 0px 25px;
+  border-left: 1px solid gray;
+  border-right: 1px solid gray;
+  min-height: 100%;   
+  margin: 0px auto;
+  min-width: 400px;
+  max-width: 1024px;   
+  width: 100%; 
 }
 
 p {
@@ -43,6 +48,7 @@ p {
 
 header {
   background-color: lightblue;
+  min-height: 59px;
 }
 
 header li {
@@ -66,7 +72,6 @@ header nav ul li {
               inset -1px 0px 3px,
               inset 0px 1px 3px,
               inset 0px -1px 3px;
-  min-height: 70px;
   text-align: center;
   vertical-align: center;
 }
@@ -129,7 +134,7 @@ footer {
 
 footer nav ul, footer section {
   float: left;
-   padding: 20px 30px;
+  padding: 20px 30px;
   width: 20%;
 }
 
