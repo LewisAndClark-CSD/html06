@@ -1,0 +1,115 @@
+/*
+   New Perspectives on HTML and CSS, 7th Edition
+   Tutorial 6
+   Case Problem 4
+
+   Schedule Table Style Sheet
+   Author: Zac F and Lane D
+   Date: 11/28/18
+
+   Filename:         hcc_schedule.css
+   Supporting Files:
+
+*/
+/* Table Styles */
+table {
+
+  border: 1px solid black;
+  border-collapse: seperate;
+  background-color: white;
+  width: 99.5%;
+}
+
+caption {
+  border: 1px solid white;
+  background-color: white;
+  width: 99.5%;
+}
+
+/* Data Cell Styles */
+td {
+  vertical-align: top;
+  text-align: center;
+  border: 2px ridge black;
+}
+
+td#event {
+  background-color: gray;
+}
+
+/* Row Styles */
+
+th, tr {
+  border: 1px solid black;
+}
+
+th {
+  width: 97%;
+  background-color: black;
+  color: white;
+}
+
+
+/* ===============================
+   Mobile Styles: 0px to 640px
+   ===============================
+*/
+
+@media only screen and (max-width: 640px) {
+
+  table, tbody, tr, td, th, caption {
+    display: block;
+  }
+
+ thead, article {
+    display: none;
+  }
+
+  th {
+    width: 100%
+  }
+
+  caption {
+    color: black;
+    background-color: gold;
+    font-size: 1.5em;
+    line-height: 2em;
+  }
+
+  td {
+    border: 1px solid gray;
+    position: relative;
+    text-align: center;
+  }
+
+  td::after {
+    content: attr(time);
+  }
+
+
+}
+
+/* Column Styles */
+
+article {
+  -moz-column-count: 2;
+  -webkit-column-count: 2;
+  column-count: 2;
+
+  -moz-column-gap: 30px;
+  -webkit-column-gap: 30px;
+  column-gap: 30px;
+
+  -moz-column-rule: 3px dashed black;
+  -webkit-column-rule: 3px dashed black;
+  column-rule: 3px dashed black;
+
+  widows: 3;
+  orphans: 3;
+}
+
+article h1 {
+  -moz-column-span: all;
+  -webkit-column-span: all;
+  column-span: all;
+}
