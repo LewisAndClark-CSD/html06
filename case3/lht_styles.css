@@ -7,7 +7,7 @@
    Case Problem 3
 
    The Lyman Theater General Style Sheet
-  
+
    Filename:   lht_styles.css
 
 */
@@ -26,11 +26,11 @@ body {
    box-shadow: rgb(51, 51, 51) 10px 0px 40px, rgb(51, 51, 51) -10px 0px 40px;
    border-left: 1px solid gray;
    border-right: 1px solid gray;
-   min-height: 100%;   
+   min-height: 100%;
    margin: 0px auto;
    min-width: 400px;
-   max-width: 1024px;   
-   width: 100%; 
+   max-width: 1024px;
+   width: 100%;
 }
 
 
@@ -52,7 +52,7 @@ header nav ul {
 }
 
 header nav ul li {
-   font-size: 1em;   
+   font-size: 1em;
 }
 
 header nav ul li a {
@@ -97,13 +97,13 @@ article p em {
 }
 
 
-/* Footer styles */   
+/* Footer styles */
 
 footer {
    clear: both;
-   color: white;    
+   color: white;
    background: linear-gradient(to bottom, rgb(178, 97, 63), rgb(41, 41, 41));
-   font-size: 0.8em;  
+   font-size: 0.8em;
    font-style: normal;
    width: 100%;
 }
@@ -135,42 +135,42 @@ footer::after {
 }
 
 /* ===============================
-   Mobile Styles: 0px to 640px 
+   Mobile Styles: 0px to 640px
    ===============================
 */
 @media only screen and (max-width: 640px) {
 
-   
+
    a#navicon {
       display: block;
    }
-   
+
    header nav {
       padding-bottom: 5px;
    }
-   
+
    header nav ul {
       display: none;
    }
-   
+
    header nav ul li {
       font-size: 1em;
       line-height: 1.3em;
       height: 1.3em;
    }
-   
+
    a#navicon:hover+ul, header nav ul:hover {
       display: block;
    }
-   
+
    header img#logoimg {
       width: 100%;
    }
-   
+
    article {
       display: none;
    }
-   
+
    footer nav ul, footer section {
       font-size: 1.2em;
       width: 100%;
@@ -183,7 +183,7 @@ footer::after {
    =============================================
 */
 @media only screen and (min-width: 641px) {
-    
+
    header nav ul {
       display: -webkit-flex;
       display: flex;
@@ -192,7 +192,7 @@ footer::after {
       -webkit-justify-content: center;
       justify-content: center;
    }
-   
+
    header nav ul li {
       -webkit-flex: 0 1 auto;
       flex: 0 1 auto;

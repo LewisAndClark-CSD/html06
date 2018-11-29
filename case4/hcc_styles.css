@@ -76,6 +76,8 @@ table a, article a, footer a {
   color: white;
   transition: 0.3s;
   font-size: normal;
+  word-wrap: normal;
+  text-overflow: clip;
 }
 
 table a:hover, article a:hover, footer a:hover {
@@ -83,4 +85,72 @@ table a:hover, article a:hover, footer a:hover {
   color: red;
   transition: 0.3s;
   font-style: italic;
+}
+
+a#navicon {
+   display: none;
+}
+
+@media only screen and (max-width: 640px) {
+   a#navicon {
+      display: block;
+      background-color: gray;
+      border-bottom: 2px solid black;
+      transition: 0.3s;
+   }
+
+   nav ul {
+      display: none;
+      transition: 0.3s;
+   }
+
+   nav ul li {
+      width: 100%;
+      border: none;
+   }
+
+   nav ul li:hover {
+      width: 100%;
+      border: none;
+   }
+
+   nav ul li:last-of-type {
+      border-bottom: 2px solid black;
+   }
+
+   a#navicon:hover+ul, nav ul:hover {
+      display: block;
+      transition: 0.3s;
+   }
+
+   article h1 {
+     line-height: 1.1em;
+   }
+
+   table.mobile {
+     display: table;
+
+   }
+
+   table#desktop {
+     display: none;
+   }
+
+}
+
+
+/* =============================================
+   Tablet and Desktop Styles: greater than 640px
+   =============================================
+*/
+@media only screen and (min-width: 641px) {
+
+  table.mobile {
+    display: none;
+  }
+
+  table#desktop {
+    display: table;
+  }
+
 }
