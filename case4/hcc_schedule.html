@@ -13,6 +13,7 @@
       Filename:   hcc_schedule.html
 
    -->
+<meta name="viewport" content="initial-scale=1.0">
 <link href="hcc_styles.css" rel="stylesheet"/>
 <link href="hcc_schedule.css" rel="stylesheet"/>
 </head>
@@ -21,24 +22,22 @@
 	<header>
 		<h1>Hamliton Conference Center</h1>
 	</header>
-	<aside>
-		<ul>
-			<li>Home Page</li>
-			<li>Reservations</li>
-			<li>Facilities</li>
-			<li>Virtual Tour</li>
-			<li>Staff</li>
-			<li>Calendar of Events</li>
-			<li>Contact Info</li>
-			<li>Directions</li>
-			<li>FAQ</li>
-		</ul>
-	</aside>
-	<article>
-		<p>To reserve a room, please contact Yancy Inwe at extension 388 or by e-mail at yancyinwe@hconfcenter.org.
-		Reservations should be made at least 48 hours in advance. Cancellations require 24 hour notice. Room deposits will
-		not be returned for cancellations within 24 hours of the scheduled event.</p>
-	</article>
+	<nav>
+		<a id="navicon" href="#"><img src="hcc_navicon.png" alt="" /></a>
+		<aside>
+			<ul>
+				<li><a href="#">Home Page</a></li>
+				<li><a href="#">Reservations</a></li>
+				<li><a href="#">Facilities</a></li>
+				<li><a href="#">Virtual Tour</a></li>
+				<li><a href="#">Staff</a></li>
+				<li><a href="#">Calendar of Events</a></li>
+				<li><a href="#">Contact Info</a></li>
+				<li><a href="#">Directions</a></li>
+				<li><a href="#">FAQ</a></li>
+			</ul>
+		</aside>
+	</nav>
 	<table>
 		<caption>Reservations for Conference Rooms<br/> Tuesday, April 10</caption>
 		<thead>
@@ -67,7 +66,7 @@
 		</thead>
 		<tfoot>
 			<tr>
-				<td>Hamilton Conference Center
+				<td colspan="20">Hamilton Conference Center
 				8711 West Park Lane
 				Hamilton, OH 45011
 				(513) 555 - 7911</td>
@@ -77,38 +76,39 @@
 			<tr>
 				<th>Sunrise Room<br/>
 				Maximum Capacity: 80</th>
-				<td colspan="4">Marriage Encounter</td>
+				<td class="taken" colspan="4">Marriage Encounter</td>
 				<td></td>
 				<td></td>
 				<td></td>
 				<td></td>
-				<td colspan="2">Marriage Encounter Luncheon</td>
+				<td class="taken" colspan="2">Marriage Encounter Luncheon</td>
 				<td></td>
 				<td></td>
 				<td></td>
 				<td></td>
-				<td colspan="4">Marriage Encounter Talks</td>
+				<td class="taken" colspan="4">Marriage Encounter Talks</td>
+				<td class="closed"rowspan="7">
 			</tr>
 			<tr>
 				<th>Moutain View Room<br/>
 				Maximum Capacity: 150</th>
-				<td colspan="2">Breakfast Club of Ohio</td>
+				<td class="taken" colspan="2">Breakfast Club of Ohio</td>
 				<td></td>
 				<td></td>
 				<td></td>
 				<td></td>
-				<td colspan="4">Ohio Conference of Librarians</td>
+				<td class="taken" colspan="4">Ohio Conference of Librarians</td>
 				<td></td>
 				<td></td>
-				<td colspan="6">Ohio Book Resale Setup</td>
+				<td class="taken" colspan="6">Ohio Book Resale Setup</td>
 			</tr>
 			<tr>
 				<th>Arbor Hall<br/>
 				Maximum Capacity: 190</th>
-				<td colspan="8">Computer Expo set up</td>
+				<td class="taken" colspan="8">Computer Expo set up</td>
 				<td></td>
 				<td></td>
-				<td colspan="8">Computer Expo opening session</td>
+				<td class="taken" colspan="8">Computer Expo opening session</td>
 			</tr>
 			<tr>
 				<th>Mitchell Theatre<br/>
@@ -127,45 +127,52 @@
 				<td></td>
 				<td></td>
 				<td></td>
-				<td colspan="4">Youth Theatre</td>
+				<td class="taken" colspan="4">Youth Theatre</td>
 			</tr>
 			<tr>
 				<th>Gold Room</br>
 				Maximum Capacity: 40</th>
 				<td></td>
 				<td></td>
-				<td colspan="3">The Tompkins Group</td>
-				<td colspan="3">Pearson Planning</td>
+				<td class="taken" colspan="3">The Tompkins Group</td>
+				<td class="taken" colspan="3">Pearson Planning</td>
 				<td></td>
 				<td></td>
 				<td></td>
 				<td></td>
-				<td colspan="3">Mothers of Multiples</td>
-				<td colspan="3">Teen Connection</td>
+				<td class="taken" colspan="3">Mothers of Multiples</td>
+				<td class="taken" colspan="3">Teen Connection</td>
 			</tr>
 			<tr>
 				<th>Blue Room</br>
 				Maximum Capacity: 30</th>
 				<td></td>
 				<td></td>
-				<td colspan="3">Retirement Planning</td>
-				<td colspan="3">The Senior Group</td>
-				<td colspan="2">Senior Luncheon</td>
-				<td colspan="5">Senior Classes</td>
-				<td colspan="3">Tutoring</td>
+				<td class="taken" colspan="3">Retirement Planning</td>
+				<td class="taken" colspan="3">The Senior Group</td>
+				<td class="taken" colspan="2">Senior Luncheon</td>
+				<td class="taken" colspan="5">Senior Classes</td>
+				<td class="taken" colspan="3">Tutoring</td>
 			</tr>
 			<tr>
 				<th>Green Room</br>
-				Maximum Capacity: 55</tr>
+				Maximum Capacity: 55</th>
 				<td></td>
 				<td></td>
-				<td colspan="4">Drivers' Ed</td>
-				<td colspan="5">Movie Club</td>
+				<td class="taken" colspan="4">Drivers' Ed</td>
+				<td class="taken" colspan="5">Movie Club</td>
 				<td></td>
 				<td></td>
 				<td></td>
 				<td></td>
-				<td colspan="3">Tutoring</td>
+				<td class="taken" colspan="3">Tutoring</td>
 			</tr>
+		</tbody>
+	</table>
+	<article>
+		<p>To reserve a room, please contact Yancy Inwe at extension 388 or by e-mail at yancyinwe@hconfcenter.org.
+		Reservations should be made at least 48 hours in advance. Cancellations require 24 hour notice. Room deposits will
+		not be returned for cancellations within 24 hours of the scheduled event.</p>
+	</article>
 </body>
 </html>

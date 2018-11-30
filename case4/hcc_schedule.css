@@ -10,3 +10,51 @@
    Supporting Files: 
 
 */
+table{
+	width:85%;
+	background-color:rgba(135,135,135,.6);
+	margin-left:auto;
+	margin-right:auto;
+	border-collapse:collapse;
+}
+
+table th{
+	color:orange;
+	padding:5px;
+	background-color:brown;
+}
+
+table thead th{
+	width:43px;
+}
+
+table thead th:first-of-type{
+	width:20%;
+}
+
+td,th{
+	border:2px solid black;
+	border-collapse:collapse;
+}
+tfoot{
+	background-color:black;
+	color:white;
+	text-align:center;
+}
+
+.taken{
+	background-color:rgb(135,135,135);
+}
+td{
+	vertical-align:center;
+	text-align:center;
+}
+.closed{
+	background-color:blue;
+}
+caption{
+	font-weight:bold;
+}
+@media only screen and (max-width: 640px){
+	table{
+		width;
