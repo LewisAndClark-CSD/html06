@@ -2,11 +2,11 @@
 
 /*
    New Perspectives on HTML5 and CSS3, 7th Edition
-   Tutorial 5
+   Tutorial 6
 
    Filename: styles.css
-   
-   This file contains the layout styles used in the Tutorial 5
+
+   This file contains the layout styles used in the Tutorial 6
    home page.
 
 */
@@ -44,7 +44,7 @@ nav.horizontal li {
    float: left;
    line-height: 2em;
    text-transform: uppercase;
-	width: 16%;
+	width: 14.2%;
 }
 
 nav.horizontal a {
@@ -82,7 +82,7 @@ section img {
 /* New Styles Added Below */
 
 /* ===============================
-   Mobile Styles: 0px to 480px 
+   Mobile Styles: 0px to 480px
    ===============================
 */
 @media only screen and (max-width: 480px) {
@@ -90,4 +90,4 @@ section img {
    nav.horizontal a {
       font-size: 1.5em;
       line-height: 2.2em;
-   } 
+   }
