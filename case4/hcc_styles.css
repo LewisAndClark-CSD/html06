@@ -1,0 +1,107 @@
+/*
+   New Perspectives on HTML and CSS, 7th Edition
+   Tutorial 6
+   Case Problem 4
+
+   Hamilton Conference Center Style Sheet
+   Author: Aspen and Bethany
+   Date:  11/29/18
+
+   Filename:         hcc_styles.css
+   Supporting files: 
+
+*/
+
+/* Html and Body Styles */
+
+html {
+	height: 100%;
+	width: 95%;
+	min-width: 640;
+	max-width: 940;
+	margin-left: auto;
+	margin-right: auto;
+	background-color: rgb(1, 19, 109);
+}
+
+body {
+	background-color: rgb(255, 151, 7);
+}
+
+
+/* Nav List Styles*/
+header {
+	background-color: rgb(255, 28, 239);
+}
+
+nav {
+	text-align: center;
+	list-style: none;
+}
+
+nav a {
+	text-decoration: none;
+}
+
+header nav ul li {
+	background-color: rgb(255, 28, 239);  
+	padding: 0px 10px;
+	display: inline;
+}
+
+header nav ul li a {
+	color: rgb(153, 83, 6);
+	font-size: 1.2em;
+}
+
+header nav ul li a:hover {
+	 color: white;
+	background-color: rgb(127, 14, 119);
+}
+
+/* Reserve Info Styles */
+
+article#info {
+	color: rgb(66, 9, 62);
+	text-align: center;
+	padding-left: 5px;
+	padding-right: 5px;
+}
+
+article#info a:hover {
+	color: red;
+}
+
+/* Column Styles */
+
+article#capacity{
+	-moz-column-count:7;
+	-webkit-column-count:7;
+	column-count:7;
+		
+	-moz-column-gap:30px;
+	-webkit-column-gap:30px;
+	column-gap:30px;
+		
+	-moz-column-rule:2px solid rgb(244, 66, 66);
+	-webkit-column-rule: 2px solid rgb(244, 66, 66);
+	column-rule: 2px solid rgb(244, 66, 66);
+		
+	widows:2;
+	orphans:2;
+
+	padding-left: 6px;
+}
+
+
+/* Footer Styles */
+
+footer {
+	background-color: rgb(255, 238, 0);
+	color: rgb(94, 20, 168);
+	text-align: center;
+}
+
+footer a:hover {
+	color: rgb(190, 201, 179);
+}

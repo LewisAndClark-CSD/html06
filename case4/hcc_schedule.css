@@ -1,0 +1,68 @@
+/*
+   New Perspectives on HTML and CSS, 7th Edition
+   Tutorial 6
+   Case Problem 4
+
+   Schedule Table Style Sheet
+   Author: Aspen and Bethany
+   Date:   11/29/18
+
+   Filename:         hcc_schedule.css
+   Supporting Files: 
+
+*/
+
+/* Table Styles */
+
+
+table {
+	border: 5px solid rgb(255, 0, 212);
+	border-collapse: collapse;
+	text-align: center;
+}
+
+table th, table td {
+	border: 3px dashed rgb(50, 255, 0);
+}
+
+tbody th {
+	background-color: rgb(83, 44, 224);
+	color: white;
+	width: 8%;
+}
+
+tbody td {
+	width: 20%;
+}
+
+table caption {
+	font-weight: bold;
+	color: rgb(26, 38, 4);
+}
+
+thead th:not(:first-of-type) {
+	background-color: rgba(0, 0, 0, 0.3);
+}
+
+thead th:first-of-type {
+	background-color: rgb(4, 38, 34);
+}
+
+
+
+/* Column Styles */
+col.normal_rooms {
+	background-color: rgb(138, 247, 218);
+}
+
+col.hall {
+	background-color: rgb(166, 220, 237);
+}
+
+col.theater {
+	background-color: rgb(142, 161, 255);
+}
+
+col.color_rooms {
+	background-color: rgb(224, 142, 255);
+}
