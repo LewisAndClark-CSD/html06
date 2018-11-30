@@ -14,14 +14,14 @@
 
    -->
 
-<link href="hcc_schedule.css" rel="stylesheet" />
-<link href="hcc_styles.css" rel="stylesheet" />
+<link href="hcc_styles.css" rel="stylesheet" media="screen"/>
+<meta name="viewport" content="width=device-width, initial-scale=1" />
 
 </head>
 
 <body>
 	<header>
-		<nav>
+		<nav class="desktop">
 			<ul>
 				<li><a href="#">Reservations</a></li>
 				<li><a href="#">Facilities</a></li>
@@ -35,13 +35,14 @@
 		</nav>
 	</header>
 	
-	<article>
-		<p>To reserve a room, please contact Yancy Inwe at extension 388 or by e-mail at yancyinwe@hconfcenter.org.
-		Reservations should be made at least 48 hours in advance. Cancellations require 24 hour notice. Room deposits will
-		not be returned for cancellations within 24 hours of the scheduled event.</p>
-	</article>
-	
-	<table>
+	<table class="desktop">
+		<caption>
+			Reservations for Conference Rooms Tuesday, April 10
+		</caption>
+		<colgroup>
+			<col class="timeCol" />
+			<col class="roomCols" span="7" />
+		</colgroup>
 		<thead>
 			<tr>
 				<th>Time</th>
@@ -56,7 +57,9 @@
 		</thead>
 		
 		<tfoot>
-			<td>Facility Closes at 5 O'clock</td>
+			<tr>
+				<td colspan="8">Facility Closes at 5 O'clock</td>
+			</tr>
 		</tfoot>
 	
 	<tbody>
@@ -64,7 +67,7 @@
 			<th>8:00 am</th>
 			<td rowspan="4">Marriage Encounter</td>
 			<td rowspan="2">Breakfast Club of Ohio</td>
-			<td rowspan="8">Computer Expo Set up</td>
+			<td rowspan="8">Computer Expo Set-Up</td>
 			<td rowspan="14">Available</td>
 			<td rowspan="2"> Available</td>
 			<td rowspan="2"> Available</td>
@@ -124,7 +127,7 @@
 			<th>1:00 pm</th>
 			<td rowspan="4">Available</td>
 			<td rowspan="2">Available</td>
-			<td rowspan="8">Computer Expo opening session</td>
+			<td rowspan="8">Computer Expo Opening Session</td>
 			<td rowspan="5">Senior Classes</td>
 		</tr>
 		
@@ -178,5 +181,124 @@
 	
 </table>
 
+<article>
+		<p>To reserve a room, please contact Yancy Inwe at extension 388 or by e-mail at yancyinwe@hconfcenter.org.
+		Reservations should be made at least 48 hours in advance. Cancellations require 24 hour notice. Room deposits will
+		not be returned for cancellations within 24 hours of the scheduled event.</p>
+</article>
+	
+<!-- Mobile Styles Copy Content -->
+<table class="mobile">
+	<tr class="mobile">
+		<th class="mobile">Sunrise Room</th>
+	</tr>
+	<tr>
+		<td class="max">Maximum Room Capacity:</td>
+	</tr>
+	<tr>
+		<td class="time">8:00 am</td>
+		<td class="event">Marriage Encounter</td>
+	</tr>
+		<tr>
+		<td class="time">10:00 am</td>
+		<td class="event">Available</td>
+	</tr>
+		<tr>
+		<td class="time">12:00 pm</td>
+		<td class="event">Marriage Encounter Luncheon</td>
+	</tr>
+		<tr>
+		<td class="time">1:00 pm</td>
+		<td class="event">Available</td>
+	</tr>
+		<tr>
+		<td class="time">3:00 pm</td>
+		<td class="event">Marriage Encounter Talks</td>
+	</tr>
+	<tr>
+		<th>Mountain View Room</th>
+	</tr>
+	<tr>
+		<td class="max">Maximum Room Capacity:</td>
+	</tr>
+	<tr>
+		<td class="time">8:00 am</td>
+		<td class="event">Breakfast Club of Ohio</td>
+	</tr>
+		<tr>
+		<td class="time">9:00 am</td>
+		<td class="event">Available</td>
+	</tr>
+		<tr>
+		<td class="time">11:00 am</td>
+		<td class="event">Marriage Encounter Luncheon</td>
+	</tr>
+		<tr>
+		<td class="time">1:00 pm</td>
+		<td class="event">Available</td>
+	</tr>
+	<tr>
+		<td class="time">2:00 pm</td>
+		<td class="event">Marriage Encounter Talks</td>
+	</tr>
+	<tr>
+		<th>Arbor Hall</th>
+	</tr>
+	<tr>
+		<td class="max">Maximum Room Capacity:</td>
+	</tr>
+		<tr>
+		<td class="time">8:00 am</td>
+		<td class="event">Computer Expo Set-Up</td>
+	</tr>
+		<tr>
+		<td class="time">12:00 pm</td>
+		<td class="event">Unavailable</td>
+	</tr>
+		<tr>
+		<td class="time">1:00 pm</td>
+		<td class="event">Computer Expo Opening Session</td>
+	</tr>
+	<tr>
+		<th>Mitchell Theater</th>
+	</tr>
+	<tr>
+		<td class="max">Maximum Room Capacity:</td>
+	</tr>
+		<tr>
+		<td class="time">8:00 am</td>
+		<td class="event">Available</td>
+	</tr>
+		<tr>
+		<td class="time">3:00 pm</td>
+		<td class="event">Youth Theatre</td>
+	</tr>
+	<tr>
+		<th>Gold Room</th>
+	</tr>
+	<tr>
+		<th>Blue Room</th>
+	</tr>
+	<tr>
+		<th>Green Room</th>
+	</tr>
+</table>
+
+<footer class="mobile">
+	<nav>
+		<ul>
+			<li><a href="#">Reservations</a></li>
+			<li><a href="#">Facilities</a></li>
+			<li><a href="#">Virtual Tour</a></li>
+			<li><a href="#">Staff</a></li>
+			<li><a href="#">Calendar of Events</a></li>
+			<li><a href="#">Contact Info</a></li>
+			<li><a href="#">Directions</a></li>
+			<li><a href="#">FAQ</a></li>
+		</ul>
+	</nav>
+</footer>
+
 </body>
 </html>
+

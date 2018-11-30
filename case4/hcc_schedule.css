@@ -13,16 +13,18 @@
 */
 
 table{
-	border-collapse: collapse;
 	background-color: rgb(203, 226, 245);
+	width: 90%;
+	margin-left: auto;
+	margin-right: auto;
 }
 
 thead th {
-	border: 6px double black;
+	border: 3px solid black;
 }
 
 tbody td, tbody th{
-	border: 6px double black;
+	border: 3px solid black;
 }
 
 tbody td {
@@ -37,4 +39,10 @@ thead th {
 tfoot {
 	background-color: black;
 	color: white;
+	text-align: center;
+	width: 100%;
+}
+
+caption {
+		padding-top: 60px;
 }

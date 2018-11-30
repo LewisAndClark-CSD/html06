@@ -12,3 +12,106 @@
 
 */
 
+/* Mobile Styles (<640px) */
+@media only screen and (max-width: 640px) {
+	.desktop {
+			display: none;
+	}
+	
+	table {width: 100%;}
+	
+	table, tbody, tr, td, th, caption {
+		display: block;
+	}
+		
+	thead, h1 {
+		display: none;
+	}
+		
+		
+	table {
+		border-collapse: collapse;
+	}
+		
+	tr {
+		margin-left: auto;
+		margin-right: auto;
+		width: 100%;
+	}
+		
+	td.time {
+		text-align: left;
+		display: inline-block;
+		width: 50%;
+	}
+		
+	td.event {
+		text-align: right;
+		display: inline-block;
+		width: 100%;
+	}
+		
+	td.max {
+		text-align: right;
+		display: inline;
+	}
+		
+		
+}
+/*Desktop Styles (>641px) */
+@media only screen and (min-width: 641px) {
+	.mobile {display: none;}
+	
+	/* Table Styles */
+	table{
+		background-color: rgb(203, 226, 245);
+		width: 90%;
+		margin-left: auto;
+		margin-right: auto;
+	}
+
+	thead th {
+		border: 3px solid black;
+	}
+
+	tbody td, tbody th{
+		border: 3px solid black;
+	}
+
+	tbody td {
+		vertical-align: top;
+		text-align: center;
+	}
+
+	thead th {
+		column-width: 300px;
+	}
+
+	tfoot {
+		background-color: black;
+		color: white;
+		text-align: center;
+		width: 100%;
+	}
+
+	caption {
+			padding-top: 60px;
+	}
+
+
+	/* Horizontal Navigation Bar Styles */
+	nav ul li {
+		float: left;
+		width: 12.5%;
+		list-style-type: none;
+		text-align: center;
+	}
+
+	a {
+		text-decoration: none;
+	}
+
+	p {
+		clear: both;
+	}
+}
