@@ -4,11 +4,13 @@
    Case Problem 4
 
    Hamilton Conference Center Style Sheet
-   Author: 
-   Date:  
+   Author: Morgan and Peter
+   Date:  11-30-18
 
    Filename:         hcc_styles.css
    Supporting files: 
 
 */
-
+table {
+	border: 1px solid black;
+}
