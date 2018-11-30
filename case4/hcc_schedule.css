@@ -1,0 +1,40 @@
+/*
+   New Perspectives on HTML and CSS, 7th Edition
+   Tutorial 6
+   Case Problem 4
+
+   Schedule Table Style Sheet
+   Author: 
+   Date:   
+
+   Filename:         hcc_schedule.css
+   Supporting Files: 
+
+*/
+
+table{
+	border-collapse: collapse;
+	background-color: rgb(203, 226, 245);
+}
+
+thead th {
+	border: 6px double black;
+}
+
+tbody td, tbody th{
+	border: 6px double black;
+}
+
+tbody td {
+	vertical-align: top;
+	text-align: center;
+}
+
+thead th {
+	column-width: 300px;
+}
+
+tfoot {
+	background-color: black;
+	color: white;
+}
