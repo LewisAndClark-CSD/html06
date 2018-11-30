@@ -77,7 +77,7 @@
 		background-position: bottom right;
 		background-size: 40%;
 		border: 6px double rgb(154, 64, 3);
-		border: collapse;
+		border-collapse: collapse;
 		margin-top: 20px;
 		margin-bottom: 20px;
 		margin-left: auto;
