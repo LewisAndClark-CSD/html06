@@ -47,8 +47,10 @@
 		}
 		
 		td::before {
-			content: attr(data-date);
+			content: " " attr(data-date) " ";
 			position: absolute;
+			left: 0px;
+			right: 0px;
 			width: 40%;
 			padding: 5px;
 		}
@@ -92,6 +94,18 @@
 	td[data-date~=Feb] {
 		background-color: rgba(232, 214, 148, 0.6);
 		box-shadow: inset gray 0px 0px 20px;
+	}
+	
+	table caption {
+		display: top;
+		text-align: center;
+		padding-bottom: 10px;
+		font-size: 1.2em;
+		letter-spacing: 3px;
+	}
+	
+	thead th {
+		background-color: rgb(154, 64, 3);
 	}
 }
 
