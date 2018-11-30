@@ -44,6 +44,15 @@ p {
   text-align: center;
 }
 
+header h1 {
+  font-size: 1.5em;
+  font-weight: bold;
+  color: orangered;
+  text-align: center;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
 /* Navigation list styles */
 
 header {
@@ -92,6 +101,10 @@ a#navicon {
 }
 
 /* Aside Styles */
+aside {
+  width: 100%;
+  border: 3px solid steelblue;
+}
 
 aside > h1 {
   text-align: center;
@@ -108,14 +121,14 @@ dd {
 dt:nth-of-type(even) , dd:nth-of-type(even) {
   clear: both;
   float: right;
-  margin-right: 150px;
+  margin-right: 300px;
   height: 100%;
 }
 
 dt:nth-of-type(odd) , dd:nth-of-type(odd) {
   clear: both;
   float: left;
-  margin-left: 150px;
+  margin-left: 300px;
   height: 100%;
 }
 
