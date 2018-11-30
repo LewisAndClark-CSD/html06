@@ -1,0 +1,47 @@
+/*
+   New Perspectives on HTML and CSS, 7th Edition
+   Tutorial 6
+   Case Problem 4
+
+   Schedule Table Style Sheet
+   Author: Khanh and Rob
+   Date:   11/30/18
+
+   Filename:         hcc_schedule.css
+   Supporting Files: 
+
+*/
+/*Table Styles*/
+table {
+	font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
+	border: 12px double white;
+	background-color: black;
+}
+td {
+	text-align: center;
+}
+td#time {
+	background-color: red;
+	color: rgb(198, 190, 31);
+}
+td#no-time {
+	background-color: green;
+	color:  rgb(198, 190, 31);
+}
+th {
+	font-size: 1.2em;
+	background-color: rgb(198, 190, 31);
+	color: rgb(93, 60, 23);
+}
+caption {
+	color: orange;
+	background-color: white;
+}
+
+thead th {
+	background-color: rgb(93, 60, 23);
+	color: rgb(198, 190, 31);
+}
+
+
+	
