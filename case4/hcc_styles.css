@@ -31,6 +31,7 @@
 		
 	table {
 		border-collapse: collapse;
+		background-color: #f2f2f2;
 	}
 		
 	tr {
@@ -43,6 +44,7 @@
 		text-align: left;
 		display: inline-block;
 		width: 50%;
+		padding-left: 10%;
 	}
 		
 	td.event {
@@ -52,10 +54,38 @@
 	}
 		
 	td.max {
-		text-align: right;
+		text-align: center;
 		display: inline;
 	}
-		
+	
+	a {
+		text-decoration: none;
+		text-align: center;
+		color: #404040;
+	}
+	
+	li {
+		list-style-type: none;
+		display: block;
+		float: left;
+		margin-left: auto;
+		margin-right: auto;
+		width: 25%;
+		text-align: center;
+		padding-top: 5px;
+		padding-bottom: 10px;
+	}
+	
+	ul {
+		display: inline;
+		margin: 0px;
+		padding-left: 0px;
+		text-align: center;
+	}
+	
+	th {
+		background-color: rgb(203, 226, 245);;
+	}
 		
 }
 /*Desktop Styles (>641px) */
@@ -63,11 +93,17 @@
 	.mobile {display: none;}
 	
 	/* Table Styles */
+	
+	body{
+		background-color: #f2f2f2;
+	}
+	
 	table{
 		background-color: rgb(203, 226, 245);
-		width: 90%;
+		width: 92%;
 		margin-left: auto;
 		margin-right: auto;
+		border: 10px solid white;
 	}
 
 	thead th {
@@ -95,7 +131,8 @@
 	}
 
 	caption {
-			padding-top: 60px;
+			padding-top: 30px;
+			font-size: 2em;
 	}
 
 
@@ -109,9 +146,14 @@
 
 	a {
 		text-decoration: none;
+		color: #404040;
+		font-size: 1.05em;
 	}
 
 	p {
 		clear: both;
+		text-align: center;
+		font-size: 1.2em;
 	}
 }
+
