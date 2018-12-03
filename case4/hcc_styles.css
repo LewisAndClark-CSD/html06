@@ -11,6 +11,105 @@
    Supporting files: 
 
 */
-table {
-	border: 1px solid black;
+
+/*table*/
+
+table#Rooms {
+	background-image: linear-gradient(rgb(190, 215, 255), black);
+	border: 5px solid gray;
 }
+
+th, td {
+	border: 3px solid gray;
+	line-height: 1.4em;
+	padding: 8px;
+}	
+
+th {
+	background-color: black;
+	color: rgb(130,210,255);
+	font-weight: normal;
+}	
+
+td {
+	color: white;
+	font-size: 0.9em;
+	vertical-align: top;
+}	
+
+
+table#Secondtable	{
+	background-image: linear-gradient(rgb(190, 215, 255), black);
+	border: 5px solid gray;
+}
+
+th, td {
+	border: 3px solid gray;
+	line-height: 1.4em;
+	padding: 8px;
+}	
+
+th {
+	background-color: black;
+	color: rgb(130,210,255);
+	font-weight: normal;
+}	
+
+td {
+	color: white;
+	font-size: 0.9em;
+	vertical-align: top;
+}	
+caption {
+	text-align:center;
+	color: blue;
+}
+	
+/* Column Styles */
+col#firstCol {
+	width:24%
+}
+
+col.dataCols {
+	width:19%;
+}	
+/* Table Header Styles */
+thead, tr {
+	height: 60px;
+}	
+thead tr:first-of-type th:first-of-type {
+	font-size: 2em;
+}
+thead tr:first-of-type th:not(:first-of-type) {
+	background-color: transparent;
+	color: black;
+}	
+	
+/*footer*/
+ footer {
+   color: white;    
+   background: linear-gradient(to bottom, rgb(3, 51, 86), black);
+   font-size: 0.9em;  
+   font-style: normal;
+}
+
+footer nav ul {
+   float: left;
+   padding: 30px;
+   width: 25%;
+}
+
+footer nav ul a {
+   color: white;
+}
+
+footer nav ul a:hover {
+   text-decoration: underline;
+}
+
+footer::after {
+   display: table;
+   content: "";
+   clear: both;
+}
+
