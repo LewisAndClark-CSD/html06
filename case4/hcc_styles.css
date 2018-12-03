@@ -1,0 +1,159 @@
+/*
+   New Perspectives on HTML and CSS, 7th Edition
+   Tutorial 6
+   Case Problem 4
+
+   Hamilton Conference Center Style Sheet
+   Author: 
+   Date:  
+
+   Filename:         hcc_styles.css
+   Supporting files: 
+
+*/
+
+/* Mobile Styles (<640px) */
+@media only screen and (max-width: 640px) {
+	.desktop {
+			display: none;
+	}
+	
+	table {width: 100%;}
+	
+	table, tbody, tr, td, th, caption {
+		display: block;
+	}
+		
+	thead, h1 {
+		display: none;
+	}
+		
+		
+	table {
+		border-collapse: collapse;
+		background-color: #f2f2f2;
+	}
+		
+	tr {
+		margin-left: auto;
+		margin-right: auto;
+		width: 100%;
+	}
+		
+	td.time {
+		text-align: left;
+		display: inline-block;
+		width: 50%;
+		padding-left: 10%;
+	}
+		
+	td.event {
+		text-align: right;
+		display: inline-block;
+		width: 100%;
+	}
+		
+	td.max {
+		text-align: center;
+		display: inline;
+	}
+	
+	a {
+		text-decoration: none;
+		text-align: center;
+		color: #404040;
+	}
+	
+	li {
+		list-style-type: none;
+		display: block;
+		float: left;
+		margin-left: auto;
+		margin-right: auto;
+		width: 25%;
+		text-align: center;
+		padding-top: 5px;
+		padding-bottom: 10px;
+	}
+	
+	ul {
+		display: inline;
+		margin: 0px;
+		padding-left: 0px;
+		text-align: center;
+	}
+	
+	th {
+		background-color: rgb(203, 226, 245);;
+	}
+		
+}
+/*Desktop Styles (>641px) */
+@media only screen and (min-width: 641px) {
+	.mobile {display: none;}
+	
+	/* Table Styles */
+	
+	body{
+		background-color: #f2f2f2;
+	}
+	
+	table{
+		background-color: rgb(203, 226, 245);
+		width: 92%;
+		margin-left: auto;
+		margin-right: auto;
+		border: 10px solid white;
+	}
+
+	thead th {
+		border: 3px solid black;
+	}
+
+	tbody td, tbody th{
+		border: 3px solid black;
+	}
+
+	tbody td {
+		vertical-align: top;
+		text-align: center;
+	}
+
+	thead th {
+		column-width: 300px;
+	}
+
+	tfoot {
+		background-color: black;
+		color: white;
+		text-align: center;
+		width: 100%;
+	}
+
+	caption {
+			padding-top: 30px;
+			font-size: 2em;
+	}
+
+
+	/* Horizontal Navigation Bar Styles */
+	nav ul li {
+		float: left;
+		width: 12.5%;
+		list-style-type: none;
+		text-align: center;
+	}
+
+	a {
+		text-decoration: none;
+		color: #404040;
+		font-size: 1.05em;
+	}
+
+	p {
+		clear: both;
+		text-align: center;
+		font-size: 1.2em;
+	}
+}
+
