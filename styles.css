@@ -34,9 +34,9 @@ nav.horizontal {
 }
 
 nav.horizontal ul {
-	list-style-type: none;
-    margin: 0;
-    padding: 0;
+   list-style-type: none;
+   margin: 0;
+   padding: 0;
 }
 
 nav.horizontal li {
@@ -44,12 +44,13 @@ nav.horizontal li {
    float: left;
    line-height: 2em;
    text-transform: uppercase;
-	width: 16%;
+   width: 14%;
 }
 
 nav.horizontal a {
    display: block;
    font-size: 1em;
+   text-align: center;
 }
 
 nav.horizontal a:visited, nav.horizontal a:link {
