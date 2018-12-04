@@ -1,0 +1,56 @@
+@charset "utf-8";
+
+/*
+   New Perspectives on HTML and CSS, 7th Edition
+   Tutorial 6
+   Case Problem 4
+
+   Schedule Table Style Sheet
+   Author: Jeremy Snider and Austin Andrews
+   Date:   November 27th 2018
+
+   Filename:         hcc_schedule.css
+   Supporting Files: 
+
+*/
+
+/* Table Styles */
+
+table {
+  border-collapse: collapse;
+  border: 2px solid black;
+}
+
+table , td, th {
+  border-collapse: collapse;
+  border: 1px solid black;
+  text-align: center;
+}
+
+th {
+  background-color: rgb(191, 208, 210);
+}
+thead th:first-of-type {
+  background-color: cornflowerblue;
+  color: black;
+  width: 8%;
+}
+ 
+thead th {
+  background-color: sandybrown;
+  color: black;
+  width: 12.5%;
+}
+
+td {
+  background-color: moccasin;
+}
+
+caption {
+  background-color: darkslategray;
+  color: snow;
+  font-weight: bold;
+}
+
+
+

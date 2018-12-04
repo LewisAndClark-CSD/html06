@@ -1,0 +1,176 @@
+@charset "utf-8";
+
+/*
+   New Perspectives on HTML and CSS, 7th Edition
+   Tutorial 6
+   Case Problem 4
+
+   Schedule Table Style Sheet
+   Author: Jeremy Snider and Austin Andrews
+   Date:   November 27th 2018
+
+   Filename:         hcc_layout.css
+   Supporting Files: 
+
+*/
+
+
+/* HTML and Body styles */
+
+html {
+  background: white;
+  font-family: Verdana, Geneva, sans-serif;
+  height: 100%;
+}
+
+body {
+  -webkit-display: flex;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-flow: row wrap;
+  flex-flow: row wrap;
+  background-color: cornsilk;
+  box-shadow: rgb(51, 51, 51) 10px 0px 25px, rgb(51, 51, 51) -10px 0px 25px;
+  border-left: 1px solid gray;
+  border-right: 1px solid gray;
+  min-height: 100%;   
+  margin: 0px auto;
+  min-width: 400px;
+  max-width: 1024px;   
+  width: 100%; 
+}
+
+p {
+  text-align: center;
+}
+
+header h1 {
+  font-size: 1.5em;
+  font-weight: bold;
+  color: orangered;
+  text-align: center;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+/* Navigation list styles */
+
+header {
+  background-color: lightblue;
+  min-height: 59px;
+}
+
+header li {
+  float: left;
+}
+
+header::after {
+  clear: both;
+  content: "";
+  display: table;
+}
+
+header nav ul {
+  width: 100%;
+}
+
+header nav ul li {
+  font-size: 0.9em;
+  width: 11.11;
+  box-shadow: inset 1px 0px 3px, 
+              inset -1px 0px 3px,
+              inset 0px 1px 3px,
+              inset 0px -1px 3px;
+  text-align: center;
+  vertical-align: center;
+}
+
+header nav ul li a {
+  color: black;
+  display: block;
+  padding: 5px 20px;
+  width: 100%;
+}
+
+header nav ul li a:hover {
+  color: rgb(11, 12, 145);
+}
+
+a#navicon {
+  display: none;
+}
+
+/* Aside Styles */
+aside {
+  width: 100%;
+  border: 3px solid steelblue;
+}
+
+aside > h1 {
+  text-align: center;
+}
+
+dt {
+  margin-top: 4px;
+}
+
+dd {
+  margin-bottom: 4px;
+}
+
+dt:nth-of-type(even) , dd:nth-of-type(even) {
+  clear: both;
+  float: right;
+  margin-right: 300px;
+  height: 100%;
+}
+
+dt:nth-of-type(odd) , dd:nth-of-type(odd) {
+  clear: both;
+  float: left;
+  margin-left: 300px;
+  height: 100%;
+}
+
+  
+
+/* Footer styles */   
+
+footer {
+  clear: both;
+  color: white;    
+  background: linear-gradient(to bottom, rgb(178, 97, 63), rgb(41, 41, 41));
+  font-size: 0.8em;  
+  font-style: normal;
+  width: 100%;
+}
+
+footer nav ul, footer section {
+  float: left;
+  padding: 20px 30px;
+  width: 20%;
+}
+
+footer section {
+  float: left;
+  padding: 20px 30px;
+  width: 40%;
+}
+
+footer nav ul a {
+  color: white;
+}
+
+footer nav ul a:hover {
+  text-decoration: underline;
+}
+
+footer::after {
+  display: table;
+  content: "";
+  clear: both;
+}
+
+
+
+
